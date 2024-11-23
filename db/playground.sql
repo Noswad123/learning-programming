@@ -10,6 +10,10 @@
 -- INSERT INTO examples (language_id, concept_id, code_snippet, explanation) VALUES
 -- ();
 
+update examples  set code_snippet='student = {"name": "Jamal", "age": 37}
+student.get("name")'
+where language_id=1 and concept_id=5;
+
 SELECT
     l.name AS Language,
     c.name AS Concept,
@@ -19,13 +23,12 @@ FROM
     INNER JOIN languages l ON e.language_id = l.id
     INNER JOIN concepts c ON e.concept_id = c.id;
 
--- INSERT INTO examples (language_id, concept_id, code_snippet, explanation) VALUES
+
 -- -- For Lua
 -- (2, 2, 'local number = 42', 'Declares a number primitive in Lua'),
 -- -- For Bash
 -- (4, 2, 'declare -i number=42', 'Declares an integer in Bash'),
 -- -- For Python
--- (1, 2, 'number = 42', 'Declares an integer in Python'),
 -- -- For TypeScript
 -- (3, 2, 'let number: number = 42;', 'Declares a number in TypeScript'),
 -- -- For Go

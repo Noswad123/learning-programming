@@ -35,3 +35,7 @@ graph coloring
 topological sort
 shortest path variations
 connected components
+
+## Todo
+INSERT INTO tags (name) VALUES ('leetcode');
+INSERT INTO trackable_tags (trackable_id, tag_id) VALUES (?, ?);
